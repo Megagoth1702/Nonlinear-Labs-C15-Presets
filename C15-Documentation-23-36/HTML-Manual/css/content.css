@@ -1,0 +1,47 @@
+/***********************************************************************************************************************
+ *  content.css
+ *  includes stylings and components for embedded content page
+ ***********************************************************************************************************************/
+
+/*******************************************************************************
+ *  basic elements
+ *******************************************************************************/
+
+html {
+    height: 100vh;
+    height: 100svh; /* prefer small viewport height, do not clip headers on mobile? */
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto var(--unit-menu);
+    width: 100vw;
+    height: 100vh;
+    height: 100svh; /* prefer small viewport height, do not clip headers on mobile? */
+    overflow: hidden;
+    user-select: none;
+}
+
+/*******************************************************************************
+ *  menu layout
+ *******************************************************************************/
+
+#toc-wrapper {
+    padding: 0.5rem;
+    overflow: hidden auto;
+    scroll-behavior: smooth;
+    line-height: 150%;
+}
+
+#toc-footer {
+    line-height: var(--unit-menu);
+    text-align: center;
+}
+
+#toc-totop-button {
+    visibility: hidden;
+}
+
+#toc-totop-button[visible] {
+    visibility: visible;
+}
